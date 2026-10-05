@@ -1,0 +1,31 @@
+                     index.html
+                  REUSABLE SHELL
+
+        ┌────────────────────────────┐
+        │ Header                     │
+        ├────────────────────────────┤
+        │ Sticky Navigation          │
+        ├────────────────────────────┤
+        │                            │
+        │    <main id="content">     │
+        │             ↑              │
+        │             │              │
+        ├─────────────┼──────────────┤
+        │ Footer      │              │
+        └─────────────┼──────────────┘
+                      │
+                   fetch()
+                      │
+       ┌──────────────┼───────────────┐
+       │              │               │
+   home.html      about.html     projects.html
+                                       │
+                                       │
+                              relative card
+                                       │
+                              absolute badge
+
+
+FIXED
+Back to Top
+attached to viewport

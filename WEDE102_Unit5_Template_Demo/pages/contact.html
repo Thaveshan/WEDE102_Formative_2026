@@ -1,0 +1,111 @@
+<section id="contact">
+    <h2>Contact the AIE Student Innovation Expo</h2>
+    <p class="form-intro">
+        Have a question about the Expo, want to connect with a student team, or interested in attending? Send us a message and the organising team will be in touch.
+    </p>
+
+    <form>
+        <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                autocomplete="name"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="email-address">Email Address</label>
+            <input
+                type="email"
+                id="email-address"
+                name="email-address"
+                autocomplete="email"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="phone-number">Phone Number</label>
+            <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                autocomplete="tel"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="area-of-interest">Area of Interest</label>
+            <select id="area-of-interest" name="area-of-interest" required>
+                <option value="" selected disabled>Select an area</option>
+                <option value="artificial-intelligence">Artificial Intelligence</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="software-development">Software Development</option>
+                <option value="web-development">Web Development</option>
+                <option value="game-development">Game Development</option>
+                <option value="general">General Expo information</option>
+            </select>
+        </div>
+
+        <fieldset class="attendance-group form-group">
+            <legend>How do you plan to attend?</legend>
+            <div class="radio-options">
+                <label class="choice-card" for="attendance-in-person">
+                    <input
+                        type="radio"
+                        id="attendance-in-person"
+                        name="attendance"
+                        value="in-person"
+                        required
+                    >
+                    In person
+                </label>
+                <label class="choice-card" for="attendance-online">
+                    <input
+                        type="radio"
+                        id="attendance-online"
+                        name="attendance"
+                        value="online"
+                    >
+                    Online
+                </label>
+                <label class="choice-card" for="attendance-undecided">
+                    <input
+                        type="radio"
+                        id="attendance-undecided"
+                        name="attendance"
+                        value="undecided"
+                    >
+                    I have not decided yet
+                </label>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+            ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label class="checkbox-option" for="expo-updates">
+                <input
+                    type="checkbox"
+                    id="expo-updates"
+                    name="expo-updates"
+                    value="yes"
+                >
+                I agree to receive updates about the AIE Student Innovation Expo.
+            </label>
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
