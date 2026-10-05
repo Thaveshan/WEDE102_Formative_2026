@@ -5,27 +5,30 @@ const contentArea =
 const navigationLinks =
     document.querySelectorAll(".nav-link");
 
-
 async function loadPage(page) {
+
+    contentArea.innerHTML = `
+        <p
+            class="loading-message"
+            aria-live="polite"
+        >
+            Loading content...
+        </p>
+    `;
 
     try {
 
         const response =
             await fetch(page);
 
-
         if (!response.ok) {
-
             throw new Error(
                 `Could not load ${page}`
             );
-
         }
-
 
         const content =
             await response.text();
-
 
         contentArea.innerHTML =
             content;
@@ -35,9 +38,7 @@ async function loadPage(page) {
 
         console.error(error);
 
-
         contentArea.innerHTML = `
-
             <section class="content-section">
 
                 <h2>
@@ -50,7 +51,6 @@ async function loadPage(page) {
                 </p>
 
             </section>
-
         `;
 
     }
